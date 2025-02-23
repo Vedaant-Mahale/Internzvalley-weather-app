@@ -1,0 +1,210 @@
+body
+{
+    width:100vw;
+    height:100vh;
+    background-image: url('./assets/bg-image.jpg');
+    background-size: cover;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+}
+.filter {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+.search-container 
+{
+    margin-top:30px;
+    width:fit-content;
+    height:40px;
+
+    align-items: center;
+}
+
+#searchInput 
+{
+    color:white;
+    padding:10px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 30px;
+    border:1px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+#searchInput::placeholder 
+{
+    color: white; 
+    opacity: 0.7; 
+}
+
+#searchButton 
+{
+    color:white;
+    padding:10px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 30px;
+    border:1px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#searchButton:hover
+{
+    background-color: rgba(255,255,255,0.5);
+}
+#buttons button
+{
+    width:50px;
+    height:50px;
+    background-color: rgba(0,0,0,0.5);
+    border:1px solid white;
+    border-radius: 50%;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#buttons button:hover
+{
+    background-color: rgba(255,255,255,0.5);
+}
+#tempbox
+{
+    margin:30px;
+    font-size:80px;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid white;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius: 20px;
+}
+#sky
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#sky img
+{
+    margin:auto;
+    width:50px;
+}
+#hilo
+{
+    font-size: 20px;
+}
+#other-info
+{
+    margin:50px;
+    padding:20px;
+    width:800px;
+    height:400px;
+    font-size:80px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background: rgba(255,255,255,0.1);
+    border:1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#block
+{
+    width: 200px;
+    height: 200px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    border: 1px solid white;
+}
+#block img
+{
+    height: 80px;
+}
+#windimage
+{
+    width: 120px;
+    height: 80px;
+}
+#block div
+{
+    margin-top:10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding:10px;
+    border-radius: 5px;
+    background-color: rgba(108, 184, 255, 0.2);
+    color:white;
+    border: 1px solid white;
+}
+@media (max-width: 900px) 
+{
+    body
+    {
+        width:100vw;
+        height:200vh;
+    }
+    .filter 
+    {
+        width:100vw;
+        height:200vh;
+    }
+    .search-container
+    {
+        margin:30px;
+        width:fit-content;
+        height:40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #searchInput
+    {
+        margin:30px;
+    }
+    #tempbox
+    {
+        margin:100px;
+    }
+    #other-info 
+    {
+        flex-direction: column;
+        width: 300px; 
+        height: 800px;
+    }
+    #block 
+    {
+        margin:20px;
+        width: 200px; 
+        height: auto;
+        padding: 20px;
+    }
+}

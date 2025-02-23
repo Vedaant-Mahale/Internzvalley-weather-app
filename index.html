@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = 'filter'>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <button id="searchButton">Get Weather</button>
+        </div>  
+        <div id = "tempbox">
+            <div id="temperature">
+                25°C
+            </div>
+            <div id="sky">
+                Clear
+            </div>
+            <div id="hilo">
+                H:0°C &nbsp;&nbsp; L:0°C
+            </div>
+            <div id = "buttons">
+                <button id="celsius">°C</button>
+                <button id="fahrenheit">°F</button>
+            </div>
+        </div>
+        <div id = "other-info">
+            <div id = "block"><img src = './assets/visibility.png'><div id = "visibility">0</div><div>Visibility</div></div>
+            <div id = "block"><img src = './assets/humidity.webp'><div id = "humidity">0</div><div>Humidity</div></div>
+            <div id = "block"><img src = './assets/wind.png' id = "windimage"><div id = "wind">0</div><div>Wind Speed</div></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
