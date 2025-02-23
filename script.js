@@ -6,7 +6,7 @@ async function click() {
     let city = document.getElementById("searchInput").value;
     try
     {
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&${CONFIG.API_KEY}`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d7a63ce4e13a6e04c20267c441a16962`
         const response = await fetch(url);
         const result = await response.json();
         let tempElement = document.getElementById("temperature");
